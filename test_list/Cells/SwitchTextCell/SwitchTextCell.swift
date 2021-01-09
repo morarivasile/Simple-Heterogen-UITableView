@@ -12,8 +12,11 @@ final class SwitchTextCell: UITableViewCell, Dequeueable {
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var switchControl: UISwitch!
     
-    func setViewModel(_ viewModel: SwitchTextCellViewModel) {
-        label.text = viewModel.text
-        switchControl.isOn = viewModel.isSwitchOn
+    func setLabelText(_ text: String?) {
+        label.text = text
+    }
+    
+    func setSwitchState(_ isOn: Bool) {
+        switchControl.isOn = isOn
     }
 }

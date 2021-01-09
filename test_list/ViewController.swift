@@ -9,14 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet private var dataSource: CellsDataSource!
     @IBOutlet private weak var tableView: UITableView! {
         didSet { registerTableViewCells() }
     }
     
+    private var dataSource: UITableViewDataSource! {
+        didSet { tableView.dataSource = dataSource }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupDataSource()
+        
+        //        setupEnumBasedDataSource()
+        setupTypeErasedModelsDataSource()
     }
     
     private func registerTableViewCells() {
@@ -25,14 +30,23 @@ class ViewController: UIViewController {
         tableView.register(ColoredViewCell.self)
     }
     
-    private func setupDataSource() {
-        dataSource.tableView = tableView
-        dataSource.setData([
+    private func setupEnumBasedDataSource() {
+        dataSource = EnumBasedCellsDataSource(tableView: tableView, data: [
             .text("Some long text tofill up the text cell on more than one row."),
-            .switchText(.init(text: "Another text for switch cell.", isSwitchOn: true)),
+            .switchText("Another text for switch cell.", isSwitchOn: true),
             .coloredView(.systemPink),
             .coloredView(.systemIndigo),
             .coloredView(.systemPurple)
+        ])
+    }
+    
+    private func setupTypeErasedModelsDataSource() {
+        dataSource = TypeErasedCellsDataSource(tableView: tableView, cellModels: [
+            AnyCell(TextCellModel(text: "Some long text tofill up the text cell on more than one row.")),
+            AnyCell(SwitchTextCellModel(text: "Another text for switch cell.", isSwitchOn: true)),
+            AnyCell(ColoredViewCellModel(color: .systemPink)),
+            AnyCell(ColoredViewCellModel(color: .systemIndigo)),
+            AnyCell(ColoredViewCellModel(color: .systemPurple))
         ])
     }
 }

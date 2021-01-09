@@ -9,6 +9,6 @@ import UIKit
 
 enum CellType {
     case text(_ text: String?)
-    case switchText(_ viewModel: SwitchTextCellViewModel)
+    case switchText(_ text: String?, isSwitchOn: Bool)
     case coloredView(_ color: UIColor)
 }

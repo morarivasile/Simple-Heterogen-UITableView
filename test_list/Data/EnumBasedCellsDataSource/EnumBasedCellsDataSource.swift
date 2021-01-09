@@ -5,9 +5,9 @@
 //  Created by Vasile Morari on 09/01/2021.
 //
 
-import UIKit
+import UIKit.UITableView
 
-final class CellsDataSource: NSObject, UITableViewDataSource {
+final class EnumBasedCellsDataSource: NSObject, UITableViewDataSource {
     
     weak var tableView: UITableView?
     
@@ -15,6 +15,11 @@ final class CellsDataSource: NSObject, UITableViewDataSource {
         didSet {
             tableView?.reloadData()
         }
+    }
+    
+    init(tableView: UITableView?, data: [CellType]) {
+        self.tableView = tableView
+        self.data = data
     }
     
     func setData(_ data: [CellType]) {
@@ -31,9 +36,10 @@ final class CellsDataSource: NSObject, UITableViewDataSource {
             return tableView.dequeueReusableCell(for: indexPath) { (cell: TextCell) in
                 cell.setText(text)
             }
-        case .switchText(let viewModel):
+        case .switchText(let text, let isSwitchOn):
             return tableView.dequeueReusableCell(for: indexPath) { (cell: SwitchTextCell) in
-                cell.setViewModel(viewModel)
+                cell.setLabelText(text)
+                cell.setSwitchState(isSwitchOn)
             }
         case .coloredView(let color):
             return tableView.dequeueReusableCell(for: indexPath) { (cell: ColoredViewCell) in
