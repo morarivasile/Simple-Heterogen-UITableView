@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ColoredViewCell: UITableViewCell {
+final class ColoredViewCell: UITableViewCell, Dequeueable {
     
     @IBOutlet private weak var centerView: UIView!
     

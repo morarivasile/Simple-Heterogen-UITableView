@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SwitchTextCell: UITableViewCell {
+final class SwitchTextCell: UITableViewCell, Dequeueable {
     
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var switchControl: UISwitch!

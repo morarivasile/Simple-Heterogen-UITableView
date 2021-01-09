@@ -13,13 +13,16 @@
 		C32F46FD25A8FD89001AA3E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32F46FB25A8FD89001AA3E9 /* Main.storyboard */; };
 		C32F46FF25A8FD8C001AA3E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32F46FE25A8FD8C001AA3E9 /* Assets.xcassets */; };
 		C32F470225A8FD8C001AA3E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32F470025A8FD8C001AA3E9 /* LaunchScreen.storyboard */; };
-		C32F470C25A91DEF001AA3E9 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F470B25A91DEF001AA3E9 /* TextCell.swift */; };
 		C32F471025A91E02001AA3E9 /* SwitchTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F470F25A91E02001AA3E9 /* SwitchTextCell.swift */; };
 		C32F471325A91E16001AA3E9 /* ColoredViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F471225A91E16001AA3E9 /* ColoredViewCell.swift */; };
 		C32F471725A91E36001AA3E9 /* SwitchTextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F471625A91E36001AA3E9 /* SwitchTextCellViewModel.swift */; };
 		C32F471A25A91EB9001AA3E9 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F471925A91EB9001AA3E9 /* CellType.swift */; };
 		C32F471D25A91ED7001AA3E9 /* CellsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F471C25A91ED7001AA3E9 /* CellsDataSource.swift */; };
-		C32F472225A91F0D001AA3E9 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F472125A91F0D001AA3E9 /* UITableView+Dequeue.swift */; };
+		C32F475025A9ADE9001AA3E9 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F474F25A9ADE9001AA3E9 /* TextCell.swift */; };
+		C32F475425A9ADF9001AA3E9 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32F475325A9ADF9001AA3E9 /* TextCell.xib */; };
+		C32F475825A9AE27001AA3E9 /* SwitchTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32F475725A9AE27001AA3E9 /* SwitchTextCell.xib */; };
+		C32F475C25A9AE62001AA3E9 /* ColoredViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32F475B25A9AE62001AA3E9 /* ColoredViewCell.xib */; };
+		C32F475F25A9AE99001AA3E9 /* UITableView+Dequeueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32F475E25A9AE99001AA3E9 /* UITableView+Dequeueable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +34,16 @@
 		C32F46FE25A8FD8C001AA3E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32F470125A8FD8C001AA3E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32F470325A8FD8C001AA3E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C32F470B25A91DEF001AA3E9 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		C32F470F25A91E02001AA3E9 /* SwitchTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTextCell.swift; sourceTree = "<group>"; };
 		C32F471225A91E16001AA3E9 /* ColoredViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredViewCell.swift; sourceTree = "<group>"; };
 		C32F471625A91E36001AA3E9 /* SwitchTextCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTextCellViewModel.swift; sourceTree = "<group>"; };
 		C32F471925A91EB9001AA3E9 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		C32F471C25A91ED7001AA3E9 /* CellsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsDataSource.swift; sourceTree = "<group>"; };
-		C32F472125A91F0D001AA3E9 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		C32F474F25A9ADE9001AA3E9 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		C32F475325A9ADF9001AA3E9 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		C32F475725A9AE27001AA3E9 /* SwitchTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTextCell.xib; sourceTree = "<group>"; };
+		C32F475B25A9AE62001AA3E9 /* ColoredViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColoredViewCell.xib; sourceTree = "<group>"; };
+		C32F475E25A9AE99001AA3E9 /* UITableView+Dequeueable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +90,9 @@
 		C32F470A25A91DE3001AA3E9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C32F470B25A91DEF001AA3E9 /* TextCell.swift */,
-				C32F470F25A91E02001AA3E9 /* SwitchTextCell.swift */,
-				C32F471225A91E16001AA3E9 /* ColoredViewCell.swift */,
+				C32F475A25A9AE5C001AA3E9 /* ColoredViewCell */,
+				C32F475625A9AE1C001AA3E9 /* SwitchTextCell */,
+				C32F474E25A9ADD7001AA3E9 /* TextCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -104,7 +110,7 @@
 		C32F472025A91EF0001AA3E9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C32F472125A91F0D001AA3E9 /* UITableView+Dequeue.swift */,
+				C32F475E25A9AE99001AA3E9 /* UITableView+Dequeueable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +132,33 @@
 				C32F470325A8FD8C001AA3E9 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C32F474E25A9ADD7001AA3E9 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				C32F474F25A9ADE9001AA3E9 /* TextCell.swift */,
+				C32F475325A9ADF9001AA3E9 /* TextCell.xib */,
+			);
+			path = TextCell;
+			sourceTree = "<group>";
+		};
+		C32F475625A9AE1C001AA3E9 /* SwitchTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				C32F470F25A91E02001AA3E9 /* SwitchTextCell.swift */,
+				C32F475725A9AE27001AA3E9 /* SwitchTextCell.xib */,
+			);
+			path = SwitchTextCell;
+			sourceTree = "<group>";
+		};
+		C32F475A25A9AE5C001AA3E9 /* ColoredViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C32F471225A91E16001AA3E9 /* ColoredViewCell.swift */,
+				C32F475B25A9AE62001AA3E9 /* ColoredViewCell.xib */,
+			);
+			path = ColoredViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +220,10 @@
 			files = (
 				C32F470225A8FD8C001AA3E9 /* LaunchScreen.storyboard in Resources */,
 				C32F46FF25A8FD8C001AA3E9 /* Assets.xcassets in Resources */,
+				C32F475425A9ADF9001AA3E9 /* TextCell.xib in Resources */,
 				C32F46FD25A8FD89001AA3E9 /* Main.storyboard in Resources */,
+				C32F475825A9AE27001AA3E9 /* SwitchTextCell.xib in Resources */,
+				C32F475C25A9AE62001AA3E9 /* ColoredViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,15 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32F475025A9ADE9001AA3E9 /* TextCell.swift in Sources */,
+				C32F475F25A9AE99001AA3E9 /* UITableView+Dequeueable.swift in Sources */,
 				C32F46FA25A8FD89001AA3E9 /* ViewController.swift in Sources */,
 				C32F471725A91E36001AA3E9 /* SwitchTextCellViewModel.swift in Sources */,
 				C32F471325A91E16001AA3E9 /* ColoredViewCell.swift in Sources */,
 				C32F471D25A91ED7001AA3E9 /* CellsDataSource.swift in Sources */,
 				C32F471A25A91EB9001AA3E9 /* CellType.swift in Sources */,
 				C32F46F625A8FD89001AA3E9 /* AppDelegate.swift in Sources */,
-				C32F470C25A91DEF001AA3E9 /* TextCell.swift in Sources */,
 				C32F46F825A8FD89001AA3E9 /* SceneDelegate.swift in Sources */,
-				C32F472225A91F0D001AA3E9 /* UITableView+Dequeue.swift in Sources */,
 				C32F471025A91E02001AA3E9 /* SwitchTextCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

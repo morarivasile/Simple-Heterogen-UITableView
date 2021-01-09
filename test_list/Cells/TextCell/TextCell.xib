@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TextCell" rowHeight="70" id="fDc-7Y-gSu" customClass="TextCell" customModule="test_list" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDc-7Y-gSu" id="JJO-zk-u1P">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-G4-jZX">
+                        <rect key="frame" x="30" y="21" width="354" height="28"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sf1-G4-jZX" firstAttribute="top" secondItem="JJO-zk-u1P" secondAttribute="topMargin" constant="10" id="5JL-WL-Kjf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Sf1-G4-jZX" secondAttribute="trailing" constant="10" id="EeE-ck-nqU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Sf1-G4-jZX" secondAttribute="bottom" constant="10" id="eET-jq-7nf"/>
+                    <constraint firstItem="Sf1-G4-jZX" firstAttribute="leading" secondItem="JJO-zk-u1P" secondAttribute="leadingMargin" constant="10" id="kOe-ge-XUM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="Sf1-G4-jZX" id="mN0-YI-vPu"/>
+            </connections>
+            <point key="canvasLocation" x="-212" y="121"/>
+        </tableViewCell>
+    </objects>
+</document>

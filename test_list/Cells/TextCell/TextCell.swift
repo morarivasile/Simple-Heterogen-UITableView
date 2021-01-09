@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TextCell: UITableViewCell {
+final class TextCell: UITableViewCell, Dequeueable {
     
     @IBOutlet private weak var label: UILabel!
     

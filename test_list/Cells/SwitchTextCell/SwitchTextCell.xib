@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwitchTextCell" rowHeight="77" id="n5z-ye-AuK" customClass="SwitchTextCell" customModule="test_list" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n5z-ye-AuK" id="6Er-7U-bSe">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlN-fH-dES">
+                        <rect key="frame" x="30" y="21" width="295" height="35"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvV-fv-fW4">
+                        <rect key="frame" x="335" y="23" width="51" height="31"/>
+                        <color key="onTintColor" systemColor="systemIndigoColor"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XlN-fH-dES" firstAttribute="top" secondItem="6Er-7U-bSe" secondAttribute="topMargin" constant="10" id="C8R-wg-bAz"/>
+                    <constraint firstItem="vvV-fv-fW4" firstAttribute="centerY" secondItem="6Er-7U-bSe" secondAttribute="centerY" id="GYd-6a-N9H"/>
+                    <constraint firstItem="vvV-fv-fW4" firstAttribute="leading" secondItem="XlN-fH-dES" secondAttribute="trailing" constant="10" id="PEb-0E-Ts1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vvV-fv-fW4" secondAttribute="trailing" constant="10" id="Rpr-IE-FZS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XlN-fH-dES" secondAttribute="bottom" constant="10" id="Tpv-Jh-h26"/>
+                    <constraint firstItem="XlN-fH-dES" firstAttribute="leading" secondItem="6Er-7U-bSe" secondAttribute="leadingMargin" constant="10" id="oDb-NG-MCP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="XlN-fH-dES" id="50Q-iW-J16"/>
+                <outlet property="switchControl" destination="vvV-fv-fW4" id="IFm-MD-e0X"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="120"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

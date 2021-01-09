@@ -28,15 +28,15 @@ final class CellsDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch data[indexPath.row] {
         case .text(let text):
-            return tableView.dequeueCell(for: indexPath) { (cell: TextCell) in
+            return tableView.dequeueReusableCell(for: indexPath) { (cell: TextCell) in
                 cell.setText(text)
             }
         case .switchText(let viewModel):
-            return tableView.dequeueCell(for: indexPath) { (cell: SwitchTextCell) in
+            return tableView.dequeueReusableCell(for: indexPath) { (cell: SwitchTextCell) in
                 cell.setViewModel(viewModel)
             }
         case .coloredView(let color):
-            return tableView.dequeueCell(for: indexPath) { (cell: ColoredViewCell) in
+            return tableView.dequeueReusableCell(for: indexPath) { (cell: ColoredViewCell) in
                 cell.setCenterViewColor(color)
             }
         }
